@@ -34,3 +34,12 @@ http服务器对外交流，收到插件相关需求后，使用 export 暴露�
 2.编写http服务器的后端人员，他只允许调用 export暴露接口，不允许修改插件客户端的代码
 
 3.编写插件客户端与插件服务器的人员，他负责编写插件客户端与插件服务器，提供服务
+
+```
+可以将目录结构进行划分：
+
+http: main.go, httpServe
+
+plugin: plugins, db, export, tools
+
+```
