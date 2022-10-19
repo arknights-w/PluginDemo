@@ -1,0 +1,41 @@
+{
+    "version": "1.0.0",
+    "services": [
+      {
+        "name": "sms",
+        "description": "短信服务，包括发送短信功能",
+        "arguments": [
+          {
+            "key": "endpoint",
+            "description": "短信服务base路径",
+            "type": "string",
+            "required": true
+          },
+          {
+            "key": "username",
+            "description": "短信服务用户名",
+            "type": "string",
+            "required": false
+          },
+          {
+            "key": "password",
+            "description": "短信服务密码",
+            "type": "string",
+            "required": false
+          }
+        ]
+      },
+      {
+        "name": "export",
+        "description": "数据导出服务，包括用户、资产导出",
+        "arguments": [
+          {
+            "key": "endpoint",
+            "description": "xxx",
+            "type": "string",
+            "required": true
+          }
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,23 @@
+syntax = "proto3";
+package proto;
+
+option go_package = "./proto;proto";
+
+message Order{
+    string cmd = 1;
+    string path = 2;
+}
+message Orders{
+    string cmd = 1;
+    repeated string paths = 2;
+}
+
+message CallBack {
+    bool result = 1;
+    string msg = 2;
+}
+
+service Monitor{
+    rpc Command(Order) returns (CallBack);
+    rpc Commands(Orders) returns (CallBack);
+}

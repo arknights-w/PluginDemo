@@ -1,0 +1,43 @@
+{
+  "version": "1.0.0",
+  "services": {
+    "sms": {
+      "name": "sms",
+      "description": "\u77ed\u4fe1\u670d\u52a1\uff0c\u5305\u62ec\u53d1\u9001\u77ed\u4fe1\u529f\u80fd",
+      "banned": true,
+      "arguments": [
+        {
+          "key": "endpoint",
+          "description": "\u77ed\u4fe1\u670d\u52a1base\u8def\u5f84",
+          "type": "string",
+          "required": true
+        },
+        {
+          "key": "username",
+          "description": "\u77ed\u4fe1\u670d\u52a1\u7528\u6237\u540d",
+          "type": "string",
+          "required": false
+        },
+        {
+          "key": "password",
+          "description": "\u77ed\u4fe1\u670d\u52a1\u5bc6\u7801",
+          "type": "string",
+          "required": false
+        }
+      ]
+    },
+    "export": {
+      "name": "export",
+      "description": "\u6570\u636e\u5bfc\u51fa\u670d\u52a1\uff0c\u5305\u62ec\u7528\u6237\u3001\u8d44\u4ea7\u5bfc\u51fa",
+      "arguments": [
+        {
+          "key": "endpoint",
+          "description": "xxx",
+          "type": "string",
+          "required": true
+        }
+      ]
+    }
+  }
+}
+
